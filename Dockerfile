@@ -10,7 +10,7 @@ echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
 chown -R www-data:www-data /var/lib/nginx
 
 # Define mountable directories.
-VOLUME ["/etc/nginx/", "/var/log/nginx", "/var/www/html", "/etc/php5"]
+VOLUME ["/etc/nginx", "/var/log/nginx", "/var/www", "/etc/php5"]
 
 # Define working directory.
 WORKDIR /etc/nginx
